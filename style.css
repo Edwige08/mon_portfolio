@@ -109,6 +109,7 @@ h1 {
 .technologies-learned,
 .technologies-in-progress {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     gap: 3rem;
@@ -124,17 +125,6 @@ h1 {
 
         @media screen and (max-width: 750px) {
             margin: 1rem;
-
-        }
-
-    }
-
-    @media screen and (max-width: 600px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-
-        @media screen and (max-width: 370px) {
-            grid-template-columns: 1fr 1fr;
         }
     }
 }
